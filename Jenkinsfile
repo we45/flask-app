@@ -34,7 +34,7 @@ node{
           keepAll: true,
           reportDir: '.',
           reportFiles: 'sca-report.json',
-          reportName: "SCA Report"
+          reportName: "Safety Report"
         ])
     }    
 }

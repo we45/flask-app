@@ -9,7 +9,7 @@ node{
     }
     stage('Bandit - SAST'){
         sh '''
-        bandit -f -r app/ -f html -o bandit-result.html | true
+        bandit -r app/ -f html -o bandit-result.html | true
         '''
         archiveArtifacts allowEmptyArchive: true, artifacts: '**/bandit-result.html', onlyIfSuccessful: true
         publishHTML (target: [
